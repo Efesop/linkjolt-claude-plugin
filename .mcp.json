@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "linkjolt": {
+      "type": "http",
+      "url": "https://www.linkjolt.io/api/mcp"
+    }
+  }
+}

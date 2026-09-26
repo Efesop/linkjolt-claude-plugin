@@ -1,0 +1,17 @@
+{
+  "name": "linkjolt",
+  "owner": {
+    "name": "LinkJolt",
+    "email": "ollie@linkjolt.io"
+  },
+  "metadata": {
+    "description": "The official LinkJolt plugin for Claude."
+  },
+  "plugins": [
+    {
+      "name": "linkjolt",
+      "source": "./",
+      "description": "Run your LinkJolt affiliate program from Claude: review performance, approve pending commissions, see who you owe, fix sales that did not track and manage affiliate coupon codes."
+    }
+  ]
+}
