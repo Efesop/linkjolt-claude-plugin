@@ -33,6 +33,8 @@ On claude.ai and Claude Desktop, add LinkJolt from the directory, or add the con
 
 The plugin has no code of its own. It adds one remote connector, `https://www.linkjolt.io/api/mcp`, run by LinkJolt, and the five skills above, which are written instructions for Claude. It runs nothing on your computer and sends nothing anywhere else. Every connector call is made with your own LinkJolt sign-in and answered from your own LinkJolt account, for the brand you picked when you signed in. LinkJolt keeps a log of each change the connector makes to your account, as it does for the Developer API.
 
-## Support
+## Support and privacy
 
-Email ollie@linkjolt.io. Developer docs: https://www.linkjolt.io/developers/mcp. Privacy policy: https://www.linkjolt.io/privacy.
+- Support: [ollie@linkjolt.io](mailto:ollie@linkjolt.io)
+- Privacy policy: [https://www.linkjolt.io/privacy](https://www.linkjolt.io/privacy)
+- Developer docs: [https://www.linkjolt.io/developers/mcp](https://www.linkjolt.io/developers/mcp)

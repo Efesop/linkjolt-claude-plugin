@@ -1,6 +1,7 @@
 {
   "name": "linkjolt",
-  "version": "1.0.0",
+  "displayName": "LinkJolt",
+  "version": "1.0.1",
   "description": "Run your LinkJolt affiliate program from Claude: review performance, approve pending commissions, see who you owe, fix sales that did not track and manage affiliate coupon codes.",
   "author": {
     "name": "LinkJolt",
@@ -8,6 +9,11 @@
     "url": "https://www.linkjolt.io"
   },
   "homepage": "https://www.linkjolt.io/developers/mcp",
+  "repository": "https://github.com/Efesop/linkjolt-claude-plugin",
+  "documentationUrl": "https://www.linkjolt.io/developers/mcp/claude",
+  "privacyPolicyUrl": "https://www.linkjolt.io/privacy",
+  "supportUrl": "mailto:ollie@linkjolt.io",
+  "icon": "https://www.linkjolt.io/android-chrome-512x512.png",
   "license": "MIT",
   "keywords": ["affiliate", "affiliate-marketing", "partners", "commissions", "payouts", "saas", "stripe", "linkjolt"]
 }
