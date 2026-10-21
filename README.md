@@ -5,7 +5,8 @@ The official LinkJolt plugin. It connects Claude to your LinkJolt affiliate prog
 ## What you get
 
 - **The LinkJolt connector** at `https://www.linkjolt.io/api/mcp`. You sign in with your LinkJolt account the first time Claude uses it, and Claude only sees the brand you pick.
-- **Five skills**
+- **Six skills**
+  - **Add an affiliate program**: adds LinkJolt to your app's code. It works out how the app takes payment (Stripe, Paddle, Polar, Creem, Lemon Squeezy, Gumroad), adds the tracking script, passes the affiliate referral into checkout and tells you how to check it with a test sale.
   - **Affiliate program review**: sales, commissions, clicks and top affiliates for any period, compared with the period before.
   - **Pending commissions**: goes through sales waiting for approval, flags anything unusual, and approves or rejects only what you confirm.
   - **Who to pay**: who you owe, how much in each currency, what is already on its way, and how to pay each affiliate.
@@ -31,7 +32,7 @@ On claude.ai and Claude Desktop, add LinkJolt from the directory, or add the con
 
 ## What it connects to
 
-The plugin has no code of its own. It adds one remote connector, `https://www.linkjolt.io/api/mcp`, run by LinkJolt, and the five skills above, which are written instructions for Claude. It runs nothing on your computer and sends nothing anywhere else. Every connector call is made with your own LinkJolt sign-in and answered from your own LinkJolt account, for the brand you picked when you signed in. LinkJolt keeps a log of each change the connector makes to your account, as it does for the Developer API.
+The plugin has no code of its own. It adds one remote connector, `https://www.linkjolt.io/api/mcp`, run by LinkJolt, and the six skills above, which are written instructions for Claude. It runs nothing on your computer and sends nothing anywhere else. Every connector call is made with your own LinkJolt sign-in and answered from your own LinkJolt account, for the brand you picked when you signed in. LinkJolt keeps a log of each change the connector makes to your account, as it does for the Developer API.
 
 ## Support and privacy
 

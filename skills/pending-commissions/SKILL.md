@@ -14,13 +14,14 @@ In LinkJolt a tracked sale starts as `pending` and earns the affiliate nothing u
 3. Look closer where something is off. Use `fetch` with `affiliate:<id>` to see the affiliate's email and `conversion:<id>` for the full sale.
 4. Sort the sales into three groups:
    - **Looks fine to approve.**
-   - **Worth a closer look**, and say why: much larger than the program's usual order, several orders from one customer in a short time, a brand new affiliate with a burst of sales.
+   - **Worth a closer look**, and say why: much larger than the program's usual order, a commission bigger than the sale itself, several orders from one customer in a short time, a brand new affiliate with a burst of sales.
    - **Likely duplicate or self-referral**: the same order id twice, or a customer email that matches the affiliate's own email.
 5. Give a recommendation for each group and stop. Ask the user which ones to approve or reject.
 
 ## Approving or rejecting
 
 - Call `update_conversion` only after the user confirms, in this conversation, each sale by name or order id. Never approve or reject on your own judgement, and never in bulk without a clear yes.
+- If `update_conversion` answers `commission_above_sale`, nothing was approved: the commission is more than 5 times its sale. Show the user the sentence it returned, and send `confirmAboveSale` as true only after they confirm that one sale again.
 - Approving can start an automatic payout if the merchant has automatic payouts switched on in LinkJolt. Mention that before approving a large batch.
 - Treat rejecting as final: the affiliate is never paid for that sale.
 - `trial_period` sales are free trials. The commission is decided when the first real payment arrives, so leave them alone.
